@@ -1,5 +1,29 @@
 # Changelog
 
+## [0.6.0](https://github.com/9AeinBagheri9/hugopress/compare/v0.5.0...v0.6.0) (2025-04-13)
+
+
+### Features ✨
+
+* add the cache_key parameter ([c92d66a](https://github.com/9AeinBagheri9/hugopress/commit/c92d66a19c0eae2c221cfd9cfb9b82be97b453ab))
+* add the cache_param_key parameter to cache partials by page params ([#50](https://github.com/9AeinBagheri9/hugopress/issues/50)) ([fc51904](https://github.com/9AeinBagheri9/hugopress/commit/fc51904b8082c38c9de6def196bbf5c32c4c9c60))
+* add the cache_site_param_key to cache partial against site parameter ([#53](https://github.com/9AeinBagheri9/hugopress/issues/53)) ([e12cdbc](https://github.com/9AeinBagheri9/hugopress/commit/e12cdbceea6ca4652177aa08d9d68743641739d0))
+* allow using page store key as cache key by setting `cache_store_key` for hooks ([eac2547](https://github.com/9AeinBagheri9/hugopress/commit/eac25471bb6bb7a1bbcf041961e17875f8566ba9))
+
+
+### Bug Fixes 🐞
+
+* adjust to accommodate Hugo v0.120.0 changes ([#36](https://github.com/9AeinBagheri9/hugopress/issues/36)) ([16af083](https://github.com/9AeinBagheri9/hugopress/commit/16af0830717f27d8785748081c8c61551d76b764))
+* appending instead overriding attribute values ([#41](https://github.com/9AeinBagheri9/hugopress/issues/41)) ([89f34c4](https://github.com/9AeinBagheri9/hugopress/commit/89f34c471af4b149f65980a67472b8935dbd3c94))
+
+
+### Performance Improvements ⚡️
+
+* allow specifying a `partial` to directly include the desired template, using the current page as the context ([#60](https://github.com/9AeinBagheri9/hugopress/issues/60)) ([4ea2769](https://github.com/9AeinBagheri9/hugopress/commit/4ea27690b5dc7c891fdf8ea4deafe78ade97b070))
+* avoid checking the partials each time render the hooks and attributes ([f814b91](https://github.com/9AeinBagheri9/hugopress/commit/f814b91b7e0ea30575e73992e97758266370acc2))
+* avoid using merge function to generate context for hooks ([8541aa8](https://github.com/9AeinBagheri9/hugopress/commit/8541aa880c50402489aa017fd79328714c8847d2))
+* calculate Index, HasPrev, HasNext for hooks in advance ([#58](https://github.com/9AeinBagheri9/hugopress/issues/58)) ([8541aa8](https://github.com/9AeinBagheri9/hugopress/commit/8541aa880c50402489aa017fd79328714c8847d2))
+
 ## [0.5.0](https://github.com/hugomods/hugopress/compare/v0.4.1...v0.5.0) (2024-06-16)
 
 
